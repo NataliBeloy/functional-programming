@@ -44,6 +44,6 @@
 (define new-word "sisters")
 (displayln "Вміст файлу input.txt:")
 (define words-list-updated (call-with-input-file "C:\\Users\\Natalia\\source\\repos\\functional-programming\\IPZ-41_Bilousova_Lab7\\input.txt" next-line-it)) ; виводимо його вміст
-(set! words-list-updated (replace-sentences-of-list words-list-updated old-word new-word)); Робимо перші літери в верхньому регістрі
+(set! words-list-updated (replace-sentences-of-list words-list-updated old-word new-word)); Робимо заміну слів
 (list->file words-list-updated "C:\\Users\\Natalia\\source\\repos\\functional-programming\\IPZ-41_Bilousova_Lab7\\output.txt") ; записуємо модифікований текст до результуючого файлу
 (display "Успішно записано в output.txt")
